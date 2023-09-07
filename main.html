@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form Design</title>
+    <link rel="stylesheets" type="text/css" href="styles.css">
+</head>    
+<body>
+    <h1 class="title">Sign In Form</h1>
+    
+    <img src="https://tse3.mm.bing.net/th?id=OIP.bSDSLgaJWARNzNTKh3CjDAHaHa&pid=Api&P=0" class="avatar">
+    <img src="https://cdn.pixabay.com/photo/2017/04/25/09/12/sea-2259066_960_720.jpg" style="height: 1000px; width: 2000px; ">
+    <div class="avatar">
+    </div>    
+    </div>
+        <div class="loginbox">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="#">Lost your password?</a> <br>
+            <a href="#">Don't have an account?</a> 
+
+        </form>
+    </div>
+</body>
+</head>
+</html>
+
+script
+window.addEventListener('scroll', function() {
+    var currentSection = '';
+    var sections = document.querySelectorAll('.section');
+    
+    sections.forEach(function(section) {
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 2) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    document.body.className = currentSection;
+  });
